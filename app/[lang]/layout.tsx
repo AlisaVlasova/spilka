@@ -1,5 +1,21 @@
 import { i18n, type Locale } from "../../i18n-config";
 
+import './globals.css'
+
+import { Unbounded, Nunito } from 'next/font/google'
+
+const unbounded = Unbounded({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-unbounded',
+})
+
+const nunito = Nunito({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-nunito',
+})
+
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
@@ -12,13 +28,13 @@ export default function Root({
   params: { lang: Locale };
 }) {
   return (
-    <html lang={params.lang}>
+    <html lang={params.lang} className={`${unbounded.variable} ${nunito.variable} font-sans`}>
       <body>{children}</body>
     </html>
   );
 }
 
 export const metadata = {
-  title: "i18n within app directory - Vercel Examples",
-  description: "How to do i18n in Next.js 13 within app directory",
+  title: "",
+  description: "",
 };

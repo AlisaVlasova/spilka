@@ -14,17 +14,22 @@ export default function LocaleSwitcher() {
   };
 
   return (
-    <div>
-      <p>Locale switcher:</p>
-      <ul>
-        {i18n.locales.map((locale) => {
-          return (
-            <li key={locale}>
+    <ul>
+      {i18n.locales.map((locale, index) => {
+        return (
+            <li
+              key={locale}
+              className="cursor-pointer drop-shadow-sm hover:drop-shadow-md hover:scale-105 transition-all"
+            >
               <Link href={redirectedPathName(locale)}>{locale}</Link>
             </li>
-          );
-        })}
-      </ul>
-    </div>
+            // {
+            //   !index && (
+            //     <li key={locale + index} className="border border-pink rounded-full"></li>
+            //   )
+            // }
+        );
+      })}
+    </ul>
   );
 }

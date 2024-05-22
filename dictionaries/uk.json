@@ -57,44 +57,44 @@
     }
   },
   "reports": {
-    "title1": "",
-    "title2": "",
-    "description": "",
+    "title1": "ТРОХИ",
+    "title2": "СТАТИСТИКИ",
+    "description": "за 2 роки існування фонду:",
     "cards": [
       {
-        "action": "",
-        "number": "",
-        "activity": ""
+        "action": "зібрано",
+        "number": "2 000 000",
+        "activity": "грн"
       },
       {
-        "action": "",
-        "number": "",
-        "activity": ""
+        "action": "проведено",
+        "number": "10",
+        "activity": "маркетів"
       },
       {
-        "action": "",
-        "number": "",
-        "activity": ""
+        "action": "закрито",
+        "number": "20",
+        "activity": "зборів"
       },
       {
-        "action": "",
-        "number": "",
-        "activity": ""
+        "action": "закрито",
+        "number": "150",
+        "activity": "міні-банок"
       },
       {
-        "action": "",
-        "number": "",
-        "activity": ""
+        "action": "проведено",
+        "number": "70",
+        "activity": "йога-практик"
       },
       {
-        "action": "",
-        "number": "",
-        "activity": ""
+        "action": "прослухано",
+        "number": "40",
+        "activity": "лекцій"
       },
       {
-        "action": "",
-        "number": "",
-        "activity": ""
+        "action": "реалізовано",
+        "number": "20",
+        "activity": "колаборацій"
       }
     ]
   },
