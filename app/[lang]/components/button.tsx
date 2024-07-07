@@ -9,7 +9,7 @@ export default function Button({
 }) {
   return (
     <button
-			className="text-2xl rounded-full border-2	border-black p-7 cursor-pointer drop-shadow-none hover:drop-shadow-md shadow hover:shadow-lg transition-all"
+			className="text-sm md:text-2xl rounded-full border-2	border-black p-2 md:p-7 cursor-pointer drop-shadow-none hover:drop-shadow-md shadow hover:shadow-lg transition-all"
 			type="button"
 			onClick={callback}
 		>

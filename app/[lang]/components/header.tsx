@@ -16,8 +16,8 @@ export default function Header({
   dictionary: Awaited<ReturnType<typeof getDictionary>>["header"];
 }) {
   return (
-    <header className="container mx-auto sticky top-0 z-10 bg-white border-2 border-pink rounded-full">
-      <ul className="flex flex-row justify-between items-center px-14 font-mono text-xl">
+    <header className="container mx-auto sticky top-0 z-20 bg-white border-2 border-pink rounded-full py-2 md:py-0">
+      <ul className="flex flex-row justify-between items-center md:px-14 gap-2 font-mono text-xl">
         <li>
           <LocaleSwitcher />
         </li>
@@ -27,7 +27,7 @@ export default function Header({
         <li>
           <NavItem text={dictionary.reports} link="#reports" />
         </li>
-        <li className="flex-initial">
+        <li>
           <Link href="/">
             <Image
               src={`/${lang}/logo.svg`}
@@ -41,7 +41,7 @@ export default function Header({
           <NavItem text={dictionary.credentials} link="#credentials" />
         </li>
         <li>
-          <NavItem text={dictionary.socialMedia} link="#socialMedia" />
+          <NavItem text={dictionary.socialMedia} link="#contacts" />
         </li>
       </ul>
     </header>

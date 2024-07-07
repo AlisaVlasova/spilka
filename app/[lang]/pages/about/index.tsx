@@ -11,9 +11,9 @@ export default function About({
 }) {
   return (
     <section id="about">
-      <div className="container mx-auto p-12 flex flex-col items-center gap-14">
+      <div className="container mx-auto p-6 lg:p-12 flex flex-col items-end md:items-center md:gap-14">
         <Title text={dictionary.fund.title} />
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center gap-4">
           <svg
             width="331"
             height="203"
@@ -32,36 +32,38 @@ export default function About({
               fill="#87B466"
             />
           </svg>
-          <p className="text-xl max-w-[60%] font-mono">{dictionary.fund.description}</p>
+          <p className="text-sm md:text-xl max-w-[60%] font-mono">{dictionary.fund.description}</p>
         </div>
       </div>
 
       <div className="relative">
-        <div className="container mx-auto p-12">
+        <div className="container mx-auto p-6 md:p-12">
           <Title text={dictionary.team.title} />
-          <ul className="flex items-start justify-between gap-12 mt-16">
-            {Object.entries(dictionary.team).map(([_, member], index) => {
-              if (typeof member != "string") {
-                return (
-                  <li
-                    className="flex flex-col items-center text-center gap-10"
-                    key={member.title}
-                  >
-                    <Image
-                      src={`/member${index + 1}.png`}
-                      width={255}
-                      height={238}
-                      alt="Photo of team member"
-                    />
-                    <h3 className="text-2xl uppercase">{member.title}</h3>
-                    <p className="text-xl font-mono">{member.description}</p>
-                  </li>
-                );
-              }
+          <ul className="flex items-baseline justify-between gap-6 md:gap-12 mt-8 md:mt-16 relative z-10 flex-wrap md:flex-nowrap">
+            {Object.entries(dictionary.team).map((items, index) => {
+              return items.map((member) => {
+                if ((typeof member != "string") && Boolean(member)) {
+                  return (
+                    <li
+                      className="flex flex-col items-center text-center gap-4 md:gap-10 max-w-[40%]"
+                      key={member.title}
+                    >
+                      <Image
+                        src={`/image/member${index}.png`}
+                        width={255}
+                        height={238}
+                        alt="Photo of team member"
+                      />
+                      <h3 className="text-xl md:text-2xl uppercase">{member.title}</h3>
+                      <p className="text-sm md:text-xl font-mono">{member.description}</p>
+                    </li>
+                  );
+                }
+              })
             })}
           </ul>
 
-          <div className="absolute top-24 left-0 right-0">
+          <div className="absolute top-24 left-0 right-0 max-w-[100vw]">
             <svg
               width="1440"
               height="500"

@@ -18,7 +18,7 @@ export default async function IndexPage({
   const dictionary = await getDictionary(lang);
 
   return (
-    <div className="pt-12">
+    <div className="pt-6 lg:pt-12 bg-white text-black relative">
       <Header lang={lang} dictionary={dictionary.header} />
 
       <CurrentFundraise dictionary={dictionary.currentFundraise} />

@@ -6,7 +6,7 @@ export default function Title({
   text: string;
 }) {
   return (
-    <h2 className="text-6xl uppercase">
+    <h2 className="text-3xl md:text-5xl xl:text-6xl uppercase font-bold">
 			{text}
     </h2>
   );

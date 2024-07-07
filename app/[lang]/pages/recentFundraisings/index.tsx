@@ -25,8 +25,8 @@ export default function RecentFundraisings({
     dictionary: Awaited<ReturnType<typeof getDictionary>>["recentFundraisings"];
   }) {    
   return (
-    <section className="pb-12">
-      <div className="container mx-auto p-12 pb-0 flex justify-between mb-14">
+    <section className="pb-6 lg:pb-12">
+      <div className="container mx-auto p-6 lg:p-12 pb-0 flex justify-between mb-12 md:mb-14">
         <Title text={dictionary.title1} />
         <Title text={dictionary.title2} />
       </div>

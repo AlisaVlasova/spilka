@@ -19,15 +19,15 @@ export default function LocaleSwitcher() {
         return (
             <li
               key={locale}
-              className="cursor-pointer drop-shadow-sm hover:drop-shadow-md hover:scale-105 transition-all"
+              className="cursor-pointer drop-shadow-sm hover:drop-shadow-md hover:scale-105 transition-all text-xs md:text-xl"
             >
-              <Link href={redirectedPathName(locale)}>{locale}</Link>
+            <Link href={redirectedPathName(locale)}>{locale}</Link>
+            {
+              pathName.split("/").includes(locale) && (
+                <span key={locale + index} className="block w-full border border-pink rounded-full"></span>
+              )
+            }
             </li>
-            // {
-            //   !index && (
-            //     <li key={locale + index} className="border border-pink rounded-full"></li>
-            //   )
-            // }
         );
       })}
     </ul>

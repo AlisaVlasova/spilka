@@ -33,8 +33,7 @@ export function middleware(request: NextRequest) {
     [
       '/manifest.json',
       '/favicon.ico',
-      '/currentFundraise.png',
-    ].includes(pathname)
+    ].includes(pathname) || pathname.startsWith('/image')
   )
     return
 
@@ -60,6 +59,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // Matcher ignoring `/_next/` and `/api/, //`
-  matcher: ["/((?!api|public|_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/((?!api|public|_next/static|_next/image|favicon.ico|images/).*)"],
 };

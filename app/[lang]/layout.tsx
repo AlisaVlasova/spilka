@@ -28,7 +28,7 @@ export default function Root({
   params: { lang: Locale };
 }) {
   return (
-    <html lang={params.lang} className={`${unbounded.variable} ${nunito.variable} font-sans`}>
+    <html lang={params.lang} className={`${unbounded.variable} ${nunito.variable} font-sans max-w-[100vw] overflow-x-hidden`}>
       <body>{children}</body>
     </html>
   );

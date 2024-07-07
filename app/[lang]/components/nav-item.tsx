@@ -11,7 +11,7 @@ export default function NavItem({
 }) {
   return (
 		<Link
-			className="block py-8 cursor-pointer drop-shadow-sm hover:drop-shadow-md hover:scale-105 transition-all"
+			className="block text-nowrap text-xs md:text-xl py-1 md:py-5 lg:py-8 cursor-pointer drop-shadow-sm hover:drop-shadow-md hover:scale-105 transition-all"
 			href={link}
 		>
 			{text}

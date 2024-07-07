@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 
 const Carousel = ({
   data,
@@ -14,46 +15,45 @@ const Carousel = ({
   const [currentImg, setCurrentImg] = useState(0);
   const [carouselSize, setCarouselSize] = useState({ width: 0, height: 0 });
   const carouselRef = useRef(null);
+  const isMobile = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    let elem = carouselRef.current as unknown as HTMLDivElement;
-    let { width, height } = elem.getBoundingClientRect();
     if (carouselRef.current) {
       setCarouselSize({
-        width: 240 + 56,
-        height: 240,
+        width: isMobile ? 160 + 56 : 240 + 56,
+        height: isMobile ? 160 : 240,
       });
     }
-  }, []);
+  }, [isMobile]);
 
   return (
-		<div className="relative container mx-auto px-12">
-			<div className="w-full h-60 rounded-md overflow-hidden relative px-12">
-      <div
-        ref={carouselRef}
-        style={{
-          left: -currentImg * carouselSize.width + 10 ,
-        }}
-        className="w-84 h-full absolute left-14 flex gap-14 transition-all duration-300"
-      >
-        {data.map((v, i) => (
-          <Link
-						key={i}
-						className="block relative shrink-0 w-60 h-full"
-						href=""
-					>
-            <Image
-              className="pointer-events-none"
-              alt={`carousel-image-${i}`}
-              fill
-              src={v.image}
-            />
-          </Link>
-        ))}
+    <div className="relative container mx-auto px-6 md:px-12">
+      <div className="w-full h-40 md:h-60 rounded-md overflow-hidden relative px-6 md:px-12">
+        <div
+          ref={carouselRef}
+          style={{
+            left: -currentImg * carouselSize.width + 10,
+          }}
+          className="w-84 h-full absolute left-14 flex gap-10 md:gap-14 transition-all duration-300"
+        >
+          {data.map((v, i) => (
+            <Link
+              key={i}
+              className="block relative shrink-0 w-40 md:w-60 h-full"
+              href=""
+            >
+              <Image
+                className="pointer-events-none"
+                alt={`carousel-image-${i}`}
+                fill 
+                src={v.image}
+              />
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
 
-			<button
+      <button
         disabled={currentImg === 0}
         onClick={() => setCurrentImg((prev) => prev - 1)}
         className={`pr-4 py-2 absolute left-0 top-1/2 translate-y-[-50%] ${
@@ -93,8 +93,7 @@ const Carousel = ({
           />
         </svg>
       </button>
-		</div>
-    
+    </div>
   );
 };
 

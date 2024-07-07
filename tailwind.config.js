@@ -5,6 +5,13 @@ const config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      'black': '#202020',
+      'gray': '#2C2A2F',
+      'pink': '#F9D4E4',
+      'green': '#88B566',
+      'white': '#F5F5F5',
+    },
     container: {
       padding: {
         DEFAULT: '1rem',

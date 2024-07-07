@@ -1,134 +1,126 @@
 {
-  "server-component": {
-    "welcome": "Willkommen"
-  },
-  "counter": {
-    "increment": "Zuwachs",
-    "decrement": "Dekrementieren"
-  },
-
-
   "header": {
-    "about": "про фонд",
-    "reports": "звіти",
-    "credentials": "реквізити",
-    "socialMedia": "соцмережі"
+    "about": "about fund",
+    "reports": "reports",
+    "credentials": "paying details",
+    "socialMedia": "social media"
   },
   "currentFundraise": {
-    "title": "АКТУАЛЬНИЙ ЗБІР",
-    "description": "збираємо 600 000 на fpv дрони",
+    "title": "CURRENT FUNDRAISING",
+    "description": "we are collecting 600 000 uah for fpv drones",
     "collected": {
-      "subtitle": "зібрано вже",
+      "subtitle": "already collected",
       "number": "10 000+",
-      "currency": "грн"
+      "currency": "uah"
     },
     "button": {
-      "support": "ПІДТРИМАТИ ЗБІР",
-      "partner": "СТАТИ ПАРТНЕРОМ"
+      "support": "SUPPORT A FUNDRAISING",
+      "partner": "BECOME A PARTNER"
     }
   },
   "recentFundraisings": {
-    "title1": "МИНУЛІ",
-    "title2": "ЗБОРИ"
+    "title1": "LAST",
+    "title2": "FUNDRAISINGS"
   },
   "about": {
     "fund": {
-      "title": "ПРО НАС",
-      "description": "ми - благодійний фонд, який збирає кошти для закриття потреб військових і цивільних, що виникли і виникають через повномасштабне вторгення росії. оcновною діяльністю фонду є організація заходів, які збирають донати"
+      "title": "ABOUT FUND",
+      "description": "we are a charitable foundation that collects funds to cover the needs of the military and civilians that arose and are arising due to the full-scale invasion of russia. the main activity of the foundation is the organization of events that collect donations"
     },
     "team": {
-      "title": "команда",
+      "title": "OUR TEAM",
       "sasha": {
-        "title": "ЦЕ САША",
-        "description": "вона - найголовніший бос, директорка Спілки, землетрусів, хіхозу і гарних справ"
+        "title": "IT’S SASHA",
+        "description": "she is the most important boss, the director of the Spilka, earthquakes, hysteria and good deeds"
       },
-      "dasha": {
-        "title": "ЦЕ ДАША",
-        "description": "вона - менеджерка фуд-корту, легенда смачної їжі + ікона алкогольних напоїв"
+      "vika": {
+        "title": "IT’S VIKA",
+        "description": "she is a queen of multitasking and multifunctionality, our project manager"
       },
       "veronika": {
-        "title": "ЦЕ ВЕРОНІКА",
-        "description": "вона - смм квін, очі та aesthetic  Спілки, наш генератор крейзі ідей"
+        "title": "IT’S VERONICA",
+        "description": "she is the smm queen, eyes and aesthetic Spilka, our crazy idea generator"
       },
       "anya": {
-        "title": "ЦЕ АНЯ",
-        "description": "вона - дизайнерка геніальних афіш, автор тематичних місяців та мінібанок"
+        "title": "IT’S ANYA",
+        "description": "she is a designer of genius posters, the author of themed months"
       }
     }
   },
   "reports": {
-    "title1": "",
-    "title2": "",
-    "description": "",
+    "title1": "A LITTLE BIT",
+    "title2": "OF statistics",
+    "description": "for 2 years of the fund's existence:",
     "cards": [
       {
-        "action": "",
-        "number": "",
-        "activity": ""
+        "action": "collected",
+        "number": "2 000 000",
+        "activity": "uah"
       },
       {
-        "action": "",
-        "number": "",
-        "activity": ""
+        "action": "organized",
+        "number": "10",
+        "activity": "markets"
       },
       {
-        "action": "",
-        "number": "",
-        "activity": ""
+        "action": "closed",
+        "number": "20",
+        "activity": "fundraisings"
       },
       {
-        "action": "",
-        "number": "",
-        "activity": ""
+        "action": "closed",
+        "number": "150",
+        "activity": "mini fundraisings"
       },
       {
-        "action": "",
-        "number": "",
-        "activity": ""
+        "action": "organized",
+        "number": "70",
+        "activity": "yoga practices"
       },
       {
-        "action": "",
-        "number": "",
-        "activity": ""
+        "action": "listened",
+        "number": "40",
+        "activity": "lectures"
       },
       {
-        "action": "",
-        "number": "",
-        "activity": ""
+        "action": "implemented",
+        "number": "20",
+        "activity": "collaborations"
       }
     ]
   },
   "payment": {
-    "title": "",
-    "subtitle": "",
+    "title": "support the fund",
+    "subtitle": "paying details",
     "name": {
-      "key": "",
-      "value": ""
+      "key": "Name of recipient",
+      "value": "БО БФ СПІЛКА"
     },
     "code": {
-      "key": "",
-      "value": ""
+      "key": "Recipient code",
+      "value": "45389791"
     },
     "account": {
-      "key": "",
-      "value": ""
+      "key": "Recipient's account",
+      "value": "UA703052990000026002016714789"
     },
     "bank": {
-      "key": "",
-      "value": ""
+      "key": "Name of bank",
+      "value": "АТ КБ 'ПРИВАТБАНК'"
     },
-    "button": ""
+    "button": "MAKE A\nCONTRIBUTION\nTO THE JAR"
   },
   "partners": {
-    "title": "",
-    "button": ""
+    "title": "PARTNERS AND FRIENS OF THE FUND",
+    "button": "BECOME\nA PARTNER"
   },
   "shop": {
-    "button": ""
+    "button": "BUY MERCH",
+    "more": "MORE",
+    "less": "LESS"
   },
   "contacts": {
-    "title1": "",
-    "title2": ""
+    "title1": "cooperation",
+    "title2": "AND SOCIAL MEDIA"
   }
 }
-
