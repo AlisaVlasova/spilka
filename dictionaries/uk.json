@@ -61,32 +61,32 @@
     "cards": [
       {
         "action": "зібрано",
-        "number": "2 000 000",
+        "number": "1 561 957",
         "activity": "грн"
       },
       {
         "action": "проведено",
-        "number": "10",
+        "number": "60",
         "activity": "маркетів"
       },
       {
         "action": "закрито",
-        "number": "20",
+        "number": "150",
         "activity": "зборів"
       },
       {
         "action": "закрито",
-        "number": "150",
+        "number": "200",
         "activity": "міні-банок"
       },
       {
         "action": "проведено",
-        "number": "70",
+        "number": "20",
         "activity": "йога-практик"
       },
       {
         "action": "прослухано",
-        "number": "40",
+        "number": "3",
         "activity": "лекцій"
       },
       {

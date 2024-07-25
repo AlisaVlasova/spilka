@@ -54,32 +54,32 @@
     "cards": [
       {
         "action": "collected",
-        "number": "2 000 000",
+        "number": "1 561 957",
         "activity": "uah"
       },
       {
         "action": "organized",
-        "number": "10",
+        "number": "60",
         "activity": "markets"
       },
       {
         "action": "closed",
-        "number": "20",
+        "number": "150",
         "activity": "fundraisings"
       },
       {
         "action": "closed",
-        "number": "150",
+        "number": "200",
         "activity": "mini fundraisings"
       },
       {
         "action": "organized",
-        "number": "70",
+        "number": "20",
         "activity": "yoga practices"
       },
       {
         "action": "listened",
-        "number": "40",
+        "number": "3",
         "activity": "lectures"
       },
       {

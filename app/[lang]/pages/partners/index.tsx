@@ -22,12 +22,12 @@ export default function Partners({
           </p>
           <ul className="w-[100%] grid grid-cols-[repeat(4,_minmax(42px,_1fr))] md:grid-cols-[repeat(8,_minmax(42px,_1fr))] lg:grid-cols-[repeat(8,_minmax(82px,_1fr))] gap-1 justify-items-center">
             {
-              Array(24).fill(null).map((_, index) => (
+              Array(35).fill(null).map((_, index) => (
                 <li key={index}>
                   <Image
                     width={83}
                     height={83}
-                    src={`/image/Ellipse${index + 1}.png`}
+                    src={`/image/Ellipse${index + 1}.svg`}
                     alt="Spilka partner"
                   />
                 </li>
