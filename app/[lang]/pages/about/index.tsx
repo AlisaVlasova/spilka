@@ -10,7 +10,7 @@ export default function About({
   dictionary: Awaited<ReturnType<typeof getDictionary>>["about"];
 }) {
   return (
-    <section id="about">
+    <section id="about" className="max-w-[100vw] overflow-hidden">
       <div className="container mx-auto p-6 lg:p-12 flex flex-col items-end md:items-center md:gap-14">
         <Title text={dictionary.fund.title} />
         <div className="flex justify-between items-center gap-4">
